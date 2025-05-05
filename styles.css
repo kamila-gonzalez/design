@@ -1,4 +1,4 @@
-<!-- styles.css -->
+/* styles.css */
 @keyframes rotateFlicker {
   0% {
     transform: rotateY(0deg);
@@ -65,3 +65,37 @@ header {
 a[href="#work"] {
   cursor: pointer;
 }
+
+/* Masonry Grid Setup */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Work item image hover effect */
+.masonry-grid .group:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Uniform label styling */
+.project-label {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  margin-top: 0.75rem;
+  width: 100%;
+  max-width: 120px;
+  max-height: 600px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for labels */
+.group:hover .project-label {
+  background-color: #fad447;
+}
+
