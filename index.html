@@ -21,12 +21,10 @@
       <a href="about.html" class="hover:text-yellow-400">About</a>
     </nav>
     <div class="md:hidden">
-      <button id="menu-button" class="text-white focus:outline-none">☰</button>
-    </div>
+      <button id="menu-button" class="text-white focus:outline-none text-3xl">☰</button>    </div>
   </header>
 
-  <div id="mobile-menu" class="hidden md:hidden px-6 py-4 space-y-2">
-    <a href="index.html#work" class="block hover:text-yellow-400">Work</a>
+    <div id="mobile-menu" class="hidden md:hidden sticky top-14 z-40 w-full bg-black bg-opacity-90 backdrop-blur px-6 py-4 space-y-2">    <a href="index.html#work" class="block hover:text-yellow-400">Work</a>
     <a href="about.html" class="block hover:text-yellow-400">About</a>
   </div>
 
@@ -52,7 +50,7 @@
         Bridging Concept with Clarity
     </h1>
     <p class="text-lg md:text-xl mt-6 text-gray-300 max-w-2xl mx-auto">
-    Kamila Gonzalez is a designer developing cohesive <strong>brand identity, editorial,</strong> and <strong>digital </strong>projects that drive engagement.
+    Kamila Gonzalez is an international designer developing cohesive <strong>brand identity, editorial,</strong> and <strong>digital </strong>projects that drive engagement.
     </p>
   </section>
   
@@ -142,12 +140,37 @@
     </div>
   </section>
 
-  <section class="text-center px-6 md:px-20 py-24 text-xl leading-relaxed">
-    <p class="font-semibold">My work is thoughtful and expressive,</p>
-    <p>often combining <span class="italic">bold visuals</span><br>
-    and <span class="italic"> clear communication</span> <br> with <span class="italic">a strong sense of purpose and design clarity</span>,</p>
-    <p class="mt-6 text-2xl font-bold">Soooo, Let's Chat :)</p>
-  </section>
+  <!-- FOOTER-->
+  <footer class="bg-black text-white px-6 md:px-20 pt-16 pb-24 max-w-6xl mx-auto text-left border-t border-gray-800">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Column 1-->
+      <div class="md:col-span-1">
+        <p class="text-gray-500 text-sm">
+          &copy; <script>document.write(new Date().getFullYear())</script> Kamila Gonzalez
+        </p>
+      </div>
+      
+      <!-- Column 2 -->
+      <div class="hidden md:block"></div>
+
+      <!-- Column 3-->
+      <div class="md:col-span-1 md:text-right">
+        <h3 class="text-lg font-semibold text-gray-400 mb-4">Get In Touch</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="mailto:zoekamila.gonzalezp@gmail.com" class="text-lg text-white hover:text-yellow-400 transition">E-mail</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kamila-gp" target="_blank" class="text-lg text-white hover:text-yellow-400 transition">LinkedIn</a>
+          </li>
+          <li>
+            <a href="./images/Resume - Kamila Gonzalez.pdf" download class="text-lg text-white hover:text-yellow-400 transition">Download Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
  <script>
     // This is your mobile menu script (unchanged)

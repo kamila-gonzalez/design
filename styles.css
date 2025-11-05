@@ -20,6 +20,58 @@
   }
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 1. Image Wipe Animation */
+@keyframes wipe-in-right {
+  from {
+    /* Starts clipped (invisible) from the right edge */
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    /* Ends unclipped (fully visible) */
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-wipe-in {
+  animation: wipe-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+
+/* 2. Text Fade-In Animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  opacity: 0; /* Start as invisible */
+  animation: fade-in-up 0.7s ease-out forwards;
+  
+  /* This delay starts the text fade *after* the image wipe begins */
+  animation-delay: 0.4s;
+}
+
+.slide-in-on-load {
+  animation: slideInFromLeft 0.7s ease-out forwards;
+}
+
 .logo-3d {
   animation: rotateFlicker 10s linear infinite;
   transform-style: preserve-3d;
@@ -42,12 +94,10 @@ nav a:hover,
   box-shadow: 0 4px 20px rgba(250, 212, 71, 0.5);
 }
 
-/* Consistent Header Styling Across Pages */
 header .logo-button {
   cursor: pointer;
 }
 
-/* Make nav and header consistent layout */
 header {
   display: flex;
   align-items: center;
@@ -55,31 +105,26 @@ header {
   padding: 1rem 3rem;
 }
 
-/* Optional: Ensure mobile menu toggles visually same */
 #mobile-menu a {
   display: block;
   padding: 0.5rem 0;
 }
 
-/* Make external links to Work scroll to home#work */
 a[href="#work"] {
   cursor: pointer;
 }
 
-/* Masonry Grid Setup */
 .masonry-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-/* Work item image hover effect */
 .masonry-grid .group:hover img {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
-/* Uniform label styling */
 .project-label {
   background-color: white;
   color: black;
@@ -94,7 +139,6 @@ a[href="#work"] {
   transition: background-color 0.3s ease;
 }
 
-/* Hover effect for labels */
 .group:hover .project-label {
   background-color: #fad447;
 }

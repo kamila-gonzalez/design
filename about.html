@@ -3,80 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Kamila</title>
+  <title>Kamila Gonzalez - About</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-black text-white font-sans">
-  <header class="flex items-left justify-between px-6 py-4 md:px-12">
-    <div class="flex items-left">
-      <a href="index.html">
-        <img src="K-logo.png" alt="Logo" class="h-10 w-auto spin-slow">
-      </a>
+<body class="bg-black text-white font-sans overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 bg-black bg-opacity-90 backdrop-blur flex items-center justify-between px-6 py-4 md:px-12">
+    <div class="text-xl md:text-2xl font-bold tracking-tight">
+      <a href="index.html" class="hover:text-yellow-400 transition">Kamila Gonzalez</a>
     </div>
-    <nav class="hidden md:flex space-x-8">
+    <nav class="space-x-8 hidden md:flex">
       <a href="index.html#work" class="hover:text-yellow-400">Work</a>
       <a href="about.html" class="hover:text-yellow-400">About</a>
-      
     </nav>
     <div class="md:hidden">
-      <button id="menu-button" class="text-white focus:outline-none">☰</button>
+      <button id="menu-button" class="text-white focus:outline-none text-3xl">☰</button>
     </div>
   </header>
 
-  <div id="mobile-menu" class="hidden md:hidden px-6 py-4 space-y-2">
+  <div id="mobile-menu" class="hidden md:hidden sticky top-14 z-40 w-full bg-black bg-opacity-90 backdrop-blur px-6 py-4 space-y-2">
     <a href="index.html#work" class="block hover:text-yellow-400">Work</a>
     <a href="about.html" class="block hover:text-yellow-400">About</a>
-    <a href="contact.html" class="block hover:text-yellow-400">Contact</a>
   </div>
 
 
-<section class="px-6 md:px-20 py-24 max-w-6xl mx-auto">
-  <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
-    
-    <!-- Centered Image -->
-    <div class="mx-auto md:mx-0 w-40 h-40 md:w-60 md:h-60 flex-shrink-0 rounded-full overflow-hidden border-4 border-yellow-400 shadow-lg">
-      <img src="./images/me-photo.JPG" alt="Kamila Gonzalez" class="w-full h-full object-cover">
+  <!-- ABOUT SECTION -->
+   <section class="px-6 md:px-20 py-16 md:py-24 max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center md:items-center gap-12 md:gap-0">
+      
+      <!-- IMAGE:-->
+      <div class="flex-shrink-0 animate-wipe-in z-0"> <!-- Set z-0 to be "behind" -->
+        <div class="w-64 h-80 md:w-80 md:h-96 overflow-hidden shadow-lg">
+          <img src="./images/me-photo.JPG" alt="A professional headshot of Kamila Gonzalez" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/320x384/111827/FAD447?text=Kamila+G';">
+        </div>
+      </div>
+  
+      <!-- TEXT:-->
+      <div class="text-left max-w-2xl md:-ml-20 relative z-10 animate-fade-in bg-black p-6 md:p-10">
+        
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
+          Hi, I'm Kamila.
+        </h1>
+        
+        <p class="text-base leading-relaxed text-gray-300 mb-6">
+          I'm a designer driven by empathy and a desire to keep growing. I was born and raised in Honduras and decided to study abroad in the US to expand my knowledge and my view of the world.
+        </p>
+        
+        <p class="text-base leading-relaxed text-gray-300 mb-6">
+          I love finding inspiration everywhere, challenging my design skills, and finding new, creative ways to express ideas. My goal is to create clear and expressive work that reflects this continuous growth.
+        </p>
+        
+        <p class="text-base leading-relaxed text-gray-300">
+          I'm always looking for the next challenge. If you have a project in mind or think my perspective would be a good fit for your team, I'd love to connect.
+        </p>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Text -->
-    <div class="text-center md:text-left max-w-2xl">
-      <h1 class="text-5xl font-bold mb-6 leading-tight">Hi :)</h1>
-      <p class="text-xl md:text-2xl leading-relaxed text-gray-200">
-        I'm Kamila Gonzalez, an innovative designer with a passion for crafting clear, expressive, and inclusive visual systems.  
-        My work spans branding, editorial, and accessibility-focused design — driven by a belief that powerful design connects people,  
-        tells stories, and builds understanding across all audiences.
-      </p>
+  <!-- FOOTER-->
+  <footer class="bg-black text-white px-6 md:px-20 pt-16 pb-24 max-w-6xl mx-auto text-left border-t border-gray-800">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Column 1-->
+      <div class="md:col-span-1">
+        <p class="text-gray-500 text-sm">
+          &copy; <script>document.write(new Date().getFullYear())</script> Kamila Gonzalez
+        </p>
+      </div>
+      
+      <!-- Column 2 -->
+      <div class="hidden md:block"></div>
+
+      <!-- Column 3-->
+      <div class="md:col-span-1 md:text-right">
+        <h3 class="text-lg font-semibold text-gray-400 mb-4">Get In Touch</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="mailto:zoekamila.gonzalezp@gmail.com" class="text-lg text-white hover:text-yellow-400 transition">E-mail</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kamila-gp" target="_blank" class="text-lg text-white hover:text-yellow-400 transition">LinkedIn</a>
+          </li>
+          <li>
+            <a href="./images/Resume - Kamila Gonzalez.pdf" download class="text-lg text-white hover:text-yellow-400 transition">Download Resume</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </footer>
 
-  </div>
-</section>
-
-<!--Contact Section-->
-
-<section class="bg-black text-white px-6 md:px-20 py-20 max-w-4xl mx-auto text-center border-t border-gray-800">
-  <h2 class="text-2xl font-bold mb-6">Let’s Connect</h2>
-
-  <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-    <!-- Email -->
-    <a href="mailto:zoekamila.gonzalezp@gmail.com" class="border border-yellow-400 text-yellow-400 font-semibold py-3 px-6 rounded-full hover:bg-yellow-400 hover:text-black transition">
-      Say Hello!
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/zoe-kamila-gonzalez-pineda" target="_blank" class="border border-yellow-400 text-yellow-400 font-semibold py-3 px-6 rounded-full hover:bg-yellow-400 hover:text-black transition">
-      LinkedIn
-    </a>
-
-    <!-- Resume -->
-    <a href="./images/Resume-KG.pdf" download class="border border-yellow-400 text-yellow-400 font-semibold py-3 px-6 rounded-full hover:bg-yellow-400 hover:text-black transition">
-      Download Resume
-    </a>
-  </div>
-</section>
-
-
-
-
+  <!-- mobile menu.  -->
+  <script>
+    document.getElementById('menu-button').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
